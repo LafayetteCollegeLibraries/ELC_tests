@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://elc.stage.lafayette.edu/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/add/item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-artifact-title-und-0-value</td>
+	<td>The Book To End All Books</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-item-format-und</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-item-format-und</td>
+	<td>label=Quarto</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-item-number-taxon-und</td>
+	<td>1234567890</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-book-or-periodical-und-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-artifact-was-authored-by-und</td>
+	<td>Authorson (197946)</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-item-subject-und</td>
+	<td>Miscellaneous Works</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-artifact-external-record-und-0-value</td>
+	<td>google.com</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-artifact-type-und</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-body-und-0-value</td>
+	<td>testytesttesting</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>css=div.alert.alert-block.alert-error</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.alert.alert-block.alert-success</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
