@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://elc.stage.lafayette.edu/" />
+<title>Add_Loan_Super_Basic</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add_Loan_Super_Basic</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/add/loan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-loan-filename-und</td>
+	<td>ELCv1_C_000</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-bib-rel-subject-und</td>
+	<td>Abyam (138198)</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-loan-shareholder-und</td>
+	<td>Mr. Painter (138042)</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-bib-rel-object-und</td>
+	<td>Antiquary (187190)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-loan-duration-und-0-value2-year</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-loan-duration-und-0-value2-year</td>
+	<td>2014</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-loan-duration-und-0-value2-month</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-loan-duration-und-0-value2-month</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-loan-duration-und-0-value2-day</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-loan-duration-und-0-value2-day</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-loan-fine-und-0-value</td>
+	<td>$25</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=edit-field-bib-rel-type-und</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>css=div.alert.alert-block.alert-error</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.alert.alert-block.alert-success</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
